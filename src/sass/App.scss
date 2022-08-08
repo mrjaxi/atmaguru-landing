@@ -222,8 +222,12 @@ header{
 
   &-style-book {
     position: absolute;
-    top: -400px;
-    left: 15%;
+    top: -350px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 
   &-section-fourth {
@@ -233,7 +237,6 @@ header{
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
     border-top-left-radius: 64px;
     border-top-right-radius: 64px;
   }
@@ -243,8 +246,59 @@ header{
     align-items: flex-start;
     flex-direction: column;
     max-width: 600px;
-    margin-top: 450px;
+    margin-top: 500px;
     z-index: 2;
+    padding-bottom: 220px;
+
+    &-main-text {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 50px;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 27px;
+    }
+
+    &-p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 22px;
+    }
+  }
+
+  // fifth section
+
+  &-style-list {
+    position: absolute;
+    top: -350px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  &-section-fifth {
+    background-color: $section-blue-bg;
+    z-index: 7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    top: -50px;
+    border-top-left-radius: 64px;
+    border-top-right-radius: 64px;
+  }
+
+  &-wrap-fifth {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 600px;
+    margin-top: 600px;
+    z-index: 2;
+    padding-bottom: 120px;
 
     &-main-text {
       font-weight: 800;

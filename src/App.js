@@ -129,6 +129,31 @@ const App = () => {
 					</div>
 				</div>
 	        </section>
+	        <section className={"s-section-fifth"}>
+		        <div className={"max_width"}>
+			        <img alt={"test"} className={"s-style-list"} src={"./img/list.png"} />
+			        <div className={"s-wrap-fifth"}>
+				        <h1 className={"s-wrap-fifth-main-text"}>
+					        Пошаговый
+					        чек-лист
+				        </h1>
+				        <p className={"s-wrap-fifth-p"}>
+					        Мы сделали отдельный чек-лист с формами
+					        и чек-боксами. Его удобно будет распечатать
+					        под каждого сотрудника и внедрять решение
+					        внося прогресс в чек-лист.
+				        </p>
+				        <p className={"s-wrap-fifth-p"}>
+					        Так ни один из этапов не потеряется
+					        и у вас всё получится внедрить правильно.
+				        </p>
+				        <p className={"s-wrap-fifth-p"}>
+					        По итогам внедрения все эти листы можно будет
+					        подшить в папку и сохранить в личном архиве.
+				        </p>
+			        </div>
+		        </div>
+	        </section>
         </div>
     );
 }
