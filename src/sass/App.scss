@@ -26,10 +26,22 @@ header{
 }
 
 .s {
+  &-section-first {
+    background-color: #F8F8F8;
+  }
+
+  &-back-style-first {
+    position: absolute;
+    right: 0;
+    bottom: -550px;
+    z-index: 1;
+  }
+
   &-wrap-first {
     display: flex;
     flex-direction: column;
     max-width: 500px;
+    z-index: 1;
 
     &-top-text {
       color: $primary-text;
@@ -88,5 +100,11 @@ header{
       line-height: 15px;
       margin-left: 20px;
     }
+  }
+
+  // second section
+
+  &-section-second {
+
   }
 }

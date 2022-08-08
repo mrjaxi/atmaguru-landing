@@ -18,8 +18,10 @@ const App = () => {
             {/*        </div>*/}
             {/*    </a>*/}
             {/*</header>*/}
-            <section>
-                <div className={"s-back-style-first max_width section-vh"}>
+            <section className={"s-section-first"}>
+                <div className={"max_width section-vh"}>
+                    {/*<div className={"s-back-style-first"} />*/}
+                    <img alt={"test"} className={"s-back-style-first"} src={"./img/first-section-man.png"} />
                     <div className={"s-wrap-first"}>
                         <span className={"s-wrap-first-top-text"}>Бесплатно</span>
                         <h1 className={"s-wrap-first-main-text"}>
@@ -46,6 +48,11 @@ const App = () => {
                             </span>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className={"s-section-second"}>
+                <div className={"max_width section-vh second"}>
+
                 </div>
             </section>
         </div>
