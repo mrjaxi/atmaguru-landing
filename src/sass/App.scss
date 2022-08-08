@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter');
 @import "variables";
 
+li {
+  list-style-type: disc;
+}
+
 header{
   top: auto;
   bottom: 0;
@@ -20,28 +24,35 @@ header{
   align-items: center;
 }
 
+.section-vh-end {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .max_width {
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 1150px;
 }
 
 .s {
   &-section-first {
     background-color: #F8F8F8;
+    overflow: hidden;
   }
 
   &-back-style-first {
     position: absolute;
     right: 0;
     bottom: -550px;
-    z-index: 1;
   }
 
   &-wrap-first {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    z-index: 1;
+    z-index: 2;
 
     &-top-text {
       color: $primary-text;
@@ -104,7 +115,60 @@ header{
 
   // second section
 
-  &-section-second {
+  &-back-style-second {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
 
+  &-section-second {
+    background-color: #000000;
+    z-index: 5;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &-wrap-second {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    z-index: 2;
+    color: #FFFFFF;
+
+    &-main-text {
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 33px;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 35px;
+    }
+
+    &-under-main-text {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 33px;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 22px;
+    }
+
+    &-middle-text {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 50px;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 24px;
+    }
+
+    &-list {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
 }

@@ -21,7 +21,7 @@ const App = () => {
             <section className={"s-section-first"}>
                 <div className={"max_width section-vh"}>
                     {/*<div className={"s-back-style-first"} />*/}
-                    <img alt={"test"} className={"s-back-style-first"} src={"./img/first-section-man.png"} />
+                    <img className={"s-back-style-first"} alt={"test"} src={"./img/first-section-man.png"} />
                     <div className={"s-wrap-first"}>
                         <span className={"s-wrap-first-top-text"}>Бесплатно</span>
                         <h1 className={"s-wrap-first-main-text"}>
@@ -51,8 +51,29 @@ const App = () => {
                 </div>
             </section>
             <section className={"s-section-second"}>
-                <div className={"max_width section-vh second"}>
-
+                <div className={"max_width section-vh-end"}>
+	                <img alt={"test"} className={"s-back-style-second"} src={"./img/second-section-man.png"} />
+					<div className={"s-wrap-second"}>
+						<h1 className={"s-wrap-second-main-text"}>
+							Почему мы выбрали эту технологию?
+						</h1>
+						<span className={"s-wrap-second-under-main-text"}>
+							Эта система мотивации персонала принесла
+							компании Amazon —
+						</span>
+						<span className={"s-wrap-second-middle-text"}>
+							$21,3 млрд
+							чистой прибыли
+							в 2020 году
+						</span>
+						<ul type="disc" className={"s-wrap-second-list"}>
+							<li>В компании «Амазон» работает 1,3 миллиона человек;</li>
+							<li>На маркетплейсе Amazon размещено более 1,9 млн компаний малого и среднего бизнеса;</li>
+							<li>Чистая прибыль Amazon за 2020 год составила $21,3 млрд;</li>
+							<li>Сотрудники Amazon заработали в 2020 году $80 млрд;</li>
+							<li>Новая цель компании Amazon — Стать Лучшим работодателем на Земле.</li>
+						</ul>
+					</div>
                 </div>
             </section>
         </div>
