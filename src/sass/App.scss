@@ -121,6 +121,7 @@ header{
     top: 0;
     left: 0;
     bottom: 0;
+    border-top-left-radius: 64px;
   }
 
   &-section-second {
@@ -129,6 +130,8 @@ header{
     position: relative;
     width: 100vw;
     height: 100vh;
+    border-top-left-radius: 64px;
+    border-top-right-radius: 64px;
   }
 
   &-wrap-second {
@@ -169,6 +172,94 @@ header{
       font-weight: 400;
       font-size: 18px;
       line-height: 26px;
+    }
+  }
+
+  // third section
+
+  &-section-third {
+    background-color: #FFFFFF;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    //height: 100vh;
+  }
+
+  &-wrap-third {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin-top: 100px;
+    z-index: 2;
+
+    &-main-text {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 50px;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 27px;
+    }
+
+    &-p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      margin-bottom: 22px;
+    }
+
+    &-p-wrap {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 64px;
+    }
+  }
+
+  // Fourth section
+
+  &-style-book {
+    position: absolute;
+    top: -400px;
+    left: 15%;
+  }
+
+  &-section-fourth {
+    background-color: $section-yellow-bg;
+    z-index: 7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    border-top-left-radius: 64px;
+    border-top-right-radius: 64px;
+  }
+
+  &-wrap-fourth {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 600px;
+    margin-top: 450px;
+    z-index: 2;
+
+    &-main-text {
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 50px;
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 27px;
+    }
+
+    &-p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 22px;
     }
   }
 }

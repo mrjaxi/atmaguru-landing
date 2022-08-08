@@ -76,6 +76,59 @@ const App = () => {
 					</div>
                 </div>
             </section>
+	        <section className={"s-section-third"}>
+				<div className={"max_width"}>
+					<div className={"s-wrap-third"}>
+						<h1 className={"s-wrap-third-main-text"}>
+							Урок на 15 минут
+							с простой и пошаговой
+							инструкцией
+						</h1>
+						<div className={"s-wrap-third-p-wrap"}>
+							<p className={"s-wrap-third-p"}>
+								В уроке мы расскажем о том, в каких ситуациях
+								эта система подходит, а в каких её ни в коем
+								случае нельзя применять.
+							</p>
+							<p className={"s-wrap-third-p"}>
+								Как правильно подготовиться самому и правильно
+								настроить сотрудника на интервью.
+							</p>
+							<p className={"s-wrap-third-p"}>
+								По каким шагам его проводить. И как в последующем
+								это решение внедрить в работу.
+							</p>
+						</div>
+						<div>
+							<img alt={"test"} src={"./img/mac-book.png"}/>
+						</div>
+					</div>
+				</div>
+	        </section>
+	        <section className={"s-section-fourth"}>
+				<div className={"max_width"}>
+					<img alt={"test"} className={"s-style-book"} src={"./img/open-book.png"} />
+					<div className={"s-wrap-fourth"}>
+						<h1 className={"s-wrap-fourth-main-text"}>
+							Инструкция
+							для проведения
+							интервью
+						</h1>
+						<p className={"s-wrap-fourth-p"}>
+							Мы переписали все важные аспекты
+							и процедуры подготовки, проведения интервью
+							и внедрения в жизнь в виде PDF-книги, с инструкциями,
+							иллюстрациями и примерами, чтобы вы могли
+							распечатать её и держать под рукой.
+						</p>
+						<p className={"s-wrap-fourth-p"}>
+							Вам не придется много раз пересматривать
+							урок, ведь распечатанная инструкция всегда
+							будет под рукой.
+						</p>
+					</div>
+				</div>
+	        </section>
         </div>
     );
 }
