@@ -48,3 +48,24 @@
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 1065px) {
+  .s-wrap-fourth {
+    margin-top: 300px;
+    margin-bottom: 10px;
+  }
+
+  .s-wrap-fifth {
+    margin-top: 350px;
+    margin-bottom: 50px;
+  }
+
+  .s-back-style-second {
+    left: -240px;
+  }
+
+  .s-back-style-first {
+    right: -150px;
+    bottom: -650px;
+  }
+}
