@@ -83,6 +83,12 @@ header{
     max-width: 500px;
     z-index: 2;
 
+    &-logo {
+      position: absolute;
+      top: 50px;
+      margin-left: -50px;
+    }
+
     &-after {
       position: relative;
       z-index: 2;
@@ -234,6 +240,10 @@ header{
     align-items: center;
     justify-content: center;
     //height: 100vh;
+
+    &-video {
+      width: 70%;
+    }
   }
 
   &-wrap-third {
@@ -289,6 +299,7 @@ header{
 
   &-style-book {
     position: absolute;
+    max-width: 100vw;
     top: -350px;
     margin-left: auto;
     margin-right: auto;
@@ -339,6 +350,7 @@ header{
   &-style-list {
     position: absolute;
     top: -350px;
+    max-width: 100vw;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -448,7 +460,7 @@ header{
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      width: 70%;
+      width: 90%;
       margin-bottom: 220px;
     }
 
