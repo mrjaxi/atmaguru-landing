@@ -581,39 +581,39 @@ const App = () => {
 			        </div>
 		        </div>
 	        </section>
-			<section className={"s-section-sixth"}>
-				<div className={"max_width"}>
-					<div className={"s-wrap-sixth"}>
-						<h1 className={"s-wrap-sixth-main-text"}>
-							Тренируйте
-							все необходимые
-							навыки
-						</h1>
-						<p className={"s-wrap-sixth-p"}>
-							Один раз в месяц мы проводим игры
-							с собственниками и управленцами для решения
-							переговорных кейсов и сложных ситуаций
-							с подчиненными.
-						</p>
-						<p className={"s-wrap-sixth-p"}>
-							На таких встречах вы сможете «обкатать»
-							технологию проведения интервью в безопасных
-							условиях ни чем не рискуя, получить
-							рекомендации и обратную связь и уже после
-							этого проводить переговоры с подчиненными.
-						</p>
-					</div>
-				</div>
-				<div className={"s-wrap-sixth-cards"}>
-					{
-						employs.map(item => (
-							<div className={"s-wrap-sixth-card-item"}>
-								<span className={"s-wrap-sixth-card-text"}>{item.name} • {item.post}</span>
-							</div>
-						))
-					}
-				</div>
-			</section>
+			{/*<section className={"s-section-sixth"}>*/}
+			{/*	<div className={"max_width"}>*/}
+			{/*		<div className={"s-wrap-sixth"}>*/}
+			{/*			<h1 className={"s-wrap-sixth-main-text"}>*/}
+			{/*				Тренируйте*/}
+			{/*				все необходимые*/}
+			{/*				навыки*/}
+			{/*			</h1>*/}
+			{/*			<p className={"s-wrap-sixth-p"}>*/}
+			{/*				Один раз в месяц мы проводим игры*/}
+			{/*				с собственниками и управленцами для решения*/}
+			{/*				переговорных кейсов и сложных ситуаций*/}
+			{/*				с подчиненными.*/}
+			{/*			</p>*/}
+			{/*			<p className={"s-wrap-sixth-p"}>*/}
+			{/*				На таких встречах вы сможете «обкатать»*/}
+			{/*				технологию проведения интервью в безопасных*/}
+			{/*				условиях ни чем не рискуя, получить*/}
+			{/*				рекомендации и обратную связь и уже после*/}
+			{/*				этого проводить переговоры с подчиненными.*/}
+			{/*			</p>*/}
+			{/*		</div>*/}
+			{/*	</div>*/}
+			{/*	<div className={"s-wrap-sixth-cards"}>*/}
+			{/*		{*/}
+			{/*			employs.map(item => (*/}
+			{/*				<div className={"s-wrap-sixth-card-item"}>*/}
+			{/*					<span className={"s-wrap-sixth-card-text"}>{item.name} • {item.post}</span>*/}
+			{/*				</div>*/}
+			{/*			))*/}
+			{/*		}*/}
+			{/*	</div>*/}
+			{/*</section>*/}
 	        <section className={"s-section-seventh"}>
 		        <div className={"max_width"}>
 			        <div className={"s-wrap-seventh"}>
