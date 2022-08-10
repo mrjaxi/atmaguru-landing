@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './sass/App.scss'
+import './sass/disabled.scss'
 import './sass/mobile.scss'
 
 const App = () => {
@@ -58,11 +59,11 @@ const App = () => {
 	];
 
     return (
-        <div>
+        <div style={{ overflowX: 'hidden' }}>
             <section className={"s-section-first"}>
                 <div className={"max_width section-vh"}>
 	                <div className={"s-section-first-qrcode"}>
-		                <svg width="148" height="149" viewBox="0 0 148 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                <svg className={"s-first-section-qrcode-size"} viewBox="0 0 148 149" fill="none" xmlns="http://www.w3.org/2000/svg">
 			                <path d="M59.7306 5.37769V5.4828H61.3336V3.87982H61.2285C61.2285 4.71022 60.5557 5.37769 59.7306 5.37769Z" fill="black"/>
 			                <path d="M66.4316 5.48279L61.176 5.48279V2.01404C61.176 1.02715 61.976 0.227115 62.9629 0.227115H66.4316V5.48279Z" fill="black"/>
 			                <path d="M71.5295 0.227112H66.2738V5.48278H71.5295V0.227112Z" fill="black"/>
@@ -467,6 +468,7 @@ const App = () => {
                         </div>
                     </div>
                 </div>
+	            <img style={{ width: '100%' }} className={"m-only-mobile-image"} alt={"test"} src={"./img/think-man-main.png"} />
             </section>
             <section className={"s-section-second"}>
                 <div className={"max_width section-vh-end"}>
@@ -493,13 +495,15 @@ const App = () => {
 						</ul>
 					</div>
                 </div>
+	            <img className={"m-only-mobile-image m-only-mobile-add"} alt={"test"} src={"./img/second-section-man.png"} />
             </section>
 	        <section className={"s-section-third"}>
 				<div className={"max_width"}>
 					<div className={"s-wrap-third"}>
 						<h1 className={"s-wrap-third-main-text"}>
+							Урок на
 							<span className={"s-wrap-third-after"}>
-								Урок на 15 минут
+								&nbsp;15 минут
 							</span>
 							&nbsp;с простой и пошаговой
 							инструкцией
@@ -525,7 +529,7 @@ const App = () => {
 					</div>
 				</div>
 		        <video className={"s-section-third-video"} autoPlay loop playsinline style={{"pointer-events": "none"}}>
-			        <source src={"./video/atma-bg.mp4"} type="video/mp4"/>
+			        <source src={"./video/atma-bg.webm"}/>
 		        </video>
 	        </section>
 	        <section className={"s-section-fourth"}>
@@ -557,8 +561,8 @@ const App = () => {
 			        <img alt={"test"} className={"s-style-list"} src={"./img/list.png"} />
 			        <div className={"s-wrap-fifth"}>
 				        <h1 className={"s-wrap-fifth-main-text"}>
-					        Пошаговый&nbsp;
-					        <span className={"s-wrap-fifth-after"}>чек&#8209;лист</span>
+					        Пошаговый
+					        <span className={"s-wrap-fifth-after"}> чек&#8209;лист</span>
 				        </h1>
 				        <p className={"s-wrap-fifth-p"}>
 					        Мы сделали отдельный чек&#8209;лист с формами
@@ -667,7 +671,7 @@ const App = () => {
 					        по внедрению решения
 				        </h1>
 				        <span className={"s-wrap-end-secondary"}>Введите номер телефона в форму ниже и мы сразу дадим вам доступ</span>
-				        <span>Выберите удобный способ связи:</span>
+				        <span className={"s-wrap-end-secondary-end"}>Выберите удобный способ связи:</span>
 				        <div className={"s-wrap-end-button-section"}>
 					        <div onClick={() => setTypeCallback('call')} className={"s-wrap-end-button-type" + (typeCallback === 'call' ? " s-wrap-end-active" : "")}>
 						        <svg className={"s-wrap-end-svg" + (typeCallback === 'call' ? " s-wrap-end-active" : "")} width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -725,6 +729,17 @@ const App = () => {
 							        и насколько успешным был опыт внедрения решения
 						        </p>
 					        </div>
+				        </div>
+				        <div className={"m-wrap-end-manager-mobile"}>
+					        <div className={"s-wrap-end-manager-wrap-text"}>
+					            <img alt={"manager-card"} className={"s-wrap-end-manager-avatar"} src={"./img/manager-avatar.png"}/>
+						        <h2 className={"s-wrap-end-manager-main-text"}>Евгения</h2>
+					        </div>
+					        <p className={"s-wrap-end-manager-secondary-text"}>
+						        С вами свяжется наш сотрудник в течение 3 дней,
+						        чтобы уточнить, насколько понятны были материалы
+						        и насколько успешным был опыт внедрения решения
+					        </p>
 				        </div>
 			        </div>
 		        </div>

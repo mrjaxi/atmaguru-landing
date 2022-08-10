@@ -29,7 +29,7 @@ header{
 }
 
 .section-vh-end {
-  min-height: 100vh;
+  //min-height: 100vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -46,6 +46,11 @@ header{
   &-section-first {
     background-color: #F8F8F8;
     overflow: hidden;
+
+    &-qrcode-size {
+      width: 148px;
+      height: 149px;
+    }
 
     &-qrcode {
       background-color: #F2C9778F;
@@ -75,6 +80,7 @@ header{
     position: absolute;
     right: 0;
     bottom: -550px;
+    //bottom: calc(100vh - 1331px);
   }
 
   &-wrap-first {
@@ -82,6 +88,8 @@ header{
     flex-direction: column;
     max-width: 500px;
     z-index: 2;
+    margin-top: 130px;
+    margin-bottom: 60px;
 
     &-logo {
       position: absolute;
@@ -92,7 +100,6 @@ header{
     &-after {
       position: relative;
       z-index: 2;
-      white-space: nowrap;
 
       &::after {
         content: "";
@@ -170,7 +177,7 @@ header{
 
   &-back-style-second {
     position: absolute;
-    min-height: 100vh;
+    min-height: 100%;
     top: 0;
     left: 0;
     bottom: 0;
@@ -182,7 +189,8 @@ header{
     z-index: 5;
     position: relative;
     width: 100vw;
-    min-height: 100vh;
+    //min-height: 100vh;
+    min-height: 100%;
     border-top-left-radius: 64px;
     border-top-right-radius: 64px;
     overflow: hidden;
@@ -194,6 +202,8 @@ header{
     max-width: 450px;
     z-index: 2;
     color: #FFFFFF;
+    margin-top: 100px;
+    margin-bottom: 50px;
 
     &-main-text {
       font-weight: 800;
@@ -243,6 +253,7 @@ header{
 
     &-video {
       width: 70%;
+      margin-bottom: -5px;
     }
   }
 
@@ -382,7 +393,6 @@ header{
     &-after {
       position: relative;
       z-index: 2;
-      white-space: nowrap;
 
       &::after {
         content: "";
@@ -391,7 +401,8 @@ header{
         width: 350px;
         height: 50px;
         background-repeat: no-repeat;
-        background-image: url("data:image/svg+xml,%3Csvg width='331' height='43' viewBox='0 0 331 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.15325 29.5738C5.678 30.4381 14.0745 29.3331 17.4414 28.9124C34.6303 26.7647 51.5772 24.4231 68.8595 22.3629C77.3768 21.3475 125.364 14.1191 132.287 17.098C134.767 18.1653 114.172 23.5898 113.728 25.4991C112.718 29.8523 178.299 22.9804 185.747 22.3757C209.617 20.438 208.868 20.3005 215.107 25.5543C218.975 28.811 222.042 32.3022 227.445 35.329C232.04 37.9033 244.353 32.2076 247.776 30.9845C263.544 25.3504 278.179 19.5729 294.5 14.0108C297.956 12.8328 305.438 9.8347 311.654 9.05505C315.846 8.52931 321.634 8.12204 323.515 7.0204' stroke='%23EEB6CE' stroke-width='13' stroke-linecap='round'/%3E%3C/svg%3E ");        margin-top: 30px;
+        background-image: url("data:image/svg+xml,%3Csvg width='331' height='43' viewBox='0 0 331 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.15325 29.5738C5.678 30.4381 14.0745 29.3331 17.4414 28.9124C34.6303 26.7647 51.5772 24.4231 68.8595 22.3629C77.3768 21.3475 125.364 14.1191 132.287 17.098C134.767 18.1653 114.172 23.5898 113.728 25.4991C112.718 29.8523 178.299 22.9804 185.747 22.3757C209.617 20.438 208.868 20.3005 215.107 25.5543C218.975 28.811 222.042 32.3022 227.445 35.329C232.04 37.9033 244.353 32.2076 247.776 30.9845C263.544 25.3504 278.179 19.5729 294.5 14.0108C297.956 12.8328 305.438 9.8347 311.654 9.05505C315.846 8.52931 321.634 8.12204 323.515 7.0204' stroke='%23EEB6CE' stroke-width='13' stroke-linecap='round'/%3E%3C/svg%3E ");
+        margin-top: 30px;
         margin-top: 40px;
         margin-left: -315px;
         z-index: -1;
@@ -437,7 +448,7 @@ header{
     top: -50px;
     max-width: 600px;
     z-index: 2;
-    padding-top: 100px;
+    margin-top: 100px;
 
     &-main-text {
       font-weight: 800;
@@ -452,7 +463,11 @@ header{
       font-weight: 400;
       font-size: 20px;
       line-height: 24px;
-      margin-bottom: 67px;
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 67px;
+      }
     }
 
     &-cards {
@@ -506,7 +521,7 @@ header{
     top: -50px;
     max-width: 600px;
     z-index: 2;
-    padding-top: 100px;
+    margin-top: 100px;
 
     &-main-text {
       font-weight: 800;
@@ -572,7 +587,7 @@ header{
     max-width: 700px;
     margin-left: 30px;
     z-index: 2;
-    padding-top: 100px;
+    margin-top: 100px;
     padding-bottom: 100px;
 
     &-main-text {
@@ -589,6 +604,16 @@ header{
       display: flex;
       align-items: flex-end;
       margin-bottom: 34px;
+
+      &-end {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: flex-end;
+
+        margin-bottom: 10px;
+      }
     }
 
     &-button-wrap {
@@ -664,7 +689,7 @@ header{
       font-weight: 400;
       font-size: 24px;
       line-height: 29px;
-      padding: 30px 22px 24px;
+      padding: 40px 22px 24px;
     }
 
     &-bottom-wrap {
