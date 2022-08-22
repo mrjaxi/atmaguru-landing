@@ -7,6 +7,7 @@ build:
       - all
    stage: build
    script:
+      - export DISABLE_ESLINT_PLUGIN=true
       - echo Build
       - yarn install
       - yarn build
@@ -26,7 +27,8 @@ Deploy to prod:
   only:
     - master
   script:
-    - rsync --exclude '.git' --exclude '.gitlab-ci.yml' -avzh build /www/motivation.atmaguru.online
+    - cd build
+    - rsync --exclude '.git' --exclude '.gitlab-ci.yml' -avzh . /www/motivation.atmaguru.online
   cache:
     key: build-cache
     paths:
