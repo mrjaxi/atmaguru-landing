@@ -1,0 +1,33 @@
+stages:
+  - build
+  - deploy
+
+build:
+   tags:
+      - all
+   stage: build
+   script:
+      - echo Build
+      - yarn install
+      - yarn build
+   cache:
+      key: build-cache
+      paths:
+         - build/
+
+Deploy to prod:
+  stage: deploy
+  environment:
+    name: prod
+    url: https://motivation.atmaguru.online/
+  when: manual
+  tags:
+    - all
+  only:
+    - master
+  script:
+    - rsync --exclude '.git' --exclude '.gitlab-ci.yml' -avzh build /www/motivation.atmaguru.online
+  cache:
+    key: build-cache
+    paths:
+      - build/
