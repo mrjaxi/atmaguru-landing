@@ -27,7 +27,8 @@ Deploy to prod:
   only:
     - master
   script:
-    - rsync --exclude '.git' --exclude '.gitlab-ci.yml' -avzh build /www/motivation.atmaguru.online
+    - cd build
+    - rsync --exclude '.git' --exclude '.gitlab-ci.yml' -avzh . /www/motivation.atmaguru.online
   cache:
     key: build-cache
     paths:
