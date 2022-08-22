@@ -391,7 +391,6 @@
   .max_width {
     display: flex;
     justify-content: center;
-    width: 90%;
   }
 
   .m-only-mobile-image {
@@ -543,12 +542,13 @@
 }
 
 @media (max-width: 550px) {
-  .s-wrap-first-bottom-text {
-    display: none;
+  .s-bottom-wrap {
+    flex-direction: column;
   }
 
-  .s-bottom-wrap {
-    display: none;
+  .s-bottom-wrap-secondary {
+    margin-top: 16px;
+    margin-left: unset;
   }
 }
 
