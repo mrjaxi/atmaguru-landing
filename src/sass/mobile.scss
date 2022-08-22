@@ -634,12 +634,8 @@
 
   //other
   .s-wrap-end-button-section {
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
-  }
-
-  .s-wrap-end-button-type {
-    margin-right: 0;
   }
 }
 
