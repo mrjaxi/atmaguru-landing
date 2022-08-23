@@ -502,7 +502,7 @@ const App = () => {
 				<div className={"max_width"}>
 					<div className={"s-wrap-third"}>
 						<h1 className={"s-wrap-third-main-text"}>
-							Урок на
+							Уроки на
 							<span className={"s-wrap-third-after"}>
 								&nbsp;15 минут
 							</span>
@@ -665,7 +665,7 @@ const App = () => {
 		        <div className={"max_width"}>
 			        <div className={"s-wrap-end"}>
 				        <h1 className={"s-wrap-end-main-text"}>
-					        Получите урок + 2 PDF
+					        Получите уроки + 2 PDF
 					        с технологией мотивации
 					        подчиненных и участвуйте
 					        в тренировках
